@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ObjectMenuItem
   Name: Space
   Icon: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
-  environment: 1
+  universeType: 2

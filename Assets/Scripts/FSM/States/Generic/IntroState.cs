@@ -15,7 +15,7 @@ public class IntroState : ExpState
         base.OnEnter();
 
         // If we don't want an IntroState, we can directly switch to Neutral state
-        // m_BaseFSM.SwitchTo(NEUTRAL);
+        m_BaseFSM.SwitchTo(NEUTRAL);
     }
 
 

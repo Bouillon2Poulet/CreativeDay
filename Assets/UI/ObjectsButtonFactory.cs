@@ -57,7 +57,9 @@ public class ObjectsButtonFactory : MonoBehaviour
 
     private void OnButtonClicked(ObjectMenuItem data)
     {
-        Debug.Log("Button for " + data.Name + " clicked !");
+        Debug.Log("Button for " + data.universeType.ToString() + " clicked !");
+        Debug.Log(WorkflowManager.Instance == null);
+        WorkflowManager.Instance.PassUserEventToFSM(new ItemButtonClickedEvent(UserEvent.ITEM_BUTTON_CLICKED, data.universeType));
     }
 
     void Start()

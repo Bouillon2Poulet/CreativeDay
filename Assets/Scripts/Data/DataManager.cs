@@ -3,7 +3,7 @@ using static EnvironmentDataManager;
 
 public class DataManager : MonoBehaviour
 {
-    [SerializeField] 
+    [SerializeField]
     private ReachyItemsManager m_ReachyDataManager;
 
     [SerializeField]
@@ -34,7 +34,7 @@ public class DataManager : MonoBehaviour
 
     void Start()
     {
-        
+
     }
 
 
@@ -55,6 +55,7 @@ public class DataManager : MonoBehaviour
 
     public void SwitchToUniverse(UniverseType target)
     {
+        Debug.Log("Switch to universe " + target);
         m_EnvironmentManager.ChangeUniverseTo(target);
     }
 }

@@ -16,7 +16,7 @@ public class AliveState : ExpState
         {
             case UserEvent.ITEM_BUTTON_CLICKED:
                 ItemButtonClickedEvent tmpEvent = (ItemButtonClickedEvent)myEvent;
-                switch(tmpEvent.m_SelectedCategory)
+                switch (tmpEvent.m_SelectedCategory)
                 {
                     case UniverseType.FARM:
                         Debug.Log("Adding a farmer item to Ritchie");

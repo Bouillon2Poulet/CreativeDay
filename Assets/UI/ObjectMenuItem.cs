@@ -1,15 +1,8 @@
 using UnityEngine;
+using static EnvironmentDataManager;
 
 [CreateAssetMenu(fileName = "ObjectMenuItem", menuName = "Scriptable Objects/ObjectMenuItem")]
 public class ObjectMenuItem : MenuItemSimple
 {
-    [System.Serializable]
-    public enum EnvironmentType
-    {
-        Farm,
-        Space,
-        War
-    }
-
-    public EnvironmentType environment;
+    public UniverseType universeType;
 }
